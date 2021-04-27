@@ -25,7 +25,7 @@
         }
         
         .box {
-            padding: 25px;
+            padding: 15px;
             box-sizing: border-box;
         }
         
@@ -81,7 +81,6 @@
         
         .iconbar p {
             display: inline-block;
-            font-size: 22px;
             margin-right: 10px;
             margin-left: 8px;
         }
@@ -91,7 +90,6 @@
             color: rgba(0, 0, 0, 0.671);
             text-align: right;
             padding: 25px;
-            font-size: 22px;
             font-family: 'Roboto', sans-serif;
             font-weight: 900;
         }
@@ -100,7 +98,7 @@
             background-color: lightgray;
             padding: 15px 15px;
             position: relative;
-            font-size: 20px;
+            font-size: 15px;
         }
         
         .footer button {
@@ -116,25 +114,54 @@
         
         .footer p {
             display: inline-block;
-            margin: auto;
         }
         
         .footer .students {
-            position: absolute;
-            left: 35%;
-            top: 33%;
+            margin-left: 90px;
         }
         
         .footer .stars {
-            position: absolute;
-            right: 3%;
-            top: 33%;
             color: goldenrod;
+            float: right;
+            margin-top: 12px;
+        }
+        
+        @media (max-width: 425px) {
+            .footer .students {
+                margin-left: 0px;
+            }
+            .container {
+                width: 100%;
+            }
+            .iconbar {
+                font-size: 17px;
+            }
+            .footer button {
+                width: 80px;
+                height: 40px;
+                font-size: 15px;
+                padding: 10px;
+            }
+            .box {
+                padding: 5px;
+            }
+            .footer {
+                padding: 5px;
+            }
         }
         
         @media (max-width: 768px) {
             .col-4 {
                 width: 100%;
+            }
+        }
+        
+        @media (max-width: 1440px) and (min-width: 768px) {
+            .iconbar {
+                font-size: 20px;
+            }
+            .footer .students {
+                margin-left: 30px;
             }
         }
     </style>

@@ -97,15 +97,16 @@
         .subbox .footer {
             background-color: lightgray;
             padding: 15px 15px;
-            position: relative;
             font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
         }
         
         .footer button {
             width: 80px;
             height: 40px;
             background-color: rgb(10, 207, 233);
-            font-size: 15px;
             border: 0;
             border-radius: 5px;
             padding: 10px;
@@ -116,10 +117,6 @@
             display: inline-block;
         }
         
-        .footer .students {
-            margin-left: 90px;
-        }
-        
         .footer .stars {
             color: goldenrod;
             float: right;
@@ -127,26 +124,25 @@
         }
         
         @media (max-width: 425px) {
-            .footer .students {
-                margin-left: 0px;
-            }
-            .container {
-                width: 100%;
-            }
             .iconbar {
-                font-size: 17px;
+                font-size: 16px;
             }
             .footer button {
-                width: 80px;
-                height: 40px;
-                font-size: 15px;
+                width: auto;
+                height: auto;
                 padding: 10px;
             }
             .box {
                 padding: 5px;
             }
-            .footer {
-                padding: 5px;
+            .subbox .footer {
+                font-size: 12px;
+            }
+            .body h2 {
+                font-size: 17px;
+            }
+            .body h4 {
+                font-size: 14px;
             }
         }
         
@@ -156,12 +152,31 @@
             }
         }
         
-        @media (max-width: 1440px) and (min-width: 768px) {
+        @media (max-width: 1025px) and (min-width: 769px) {
+            .iconbar {
+                font-size: 15px;
+            }
+            .subbox .footer {
+                font-size: 13px;
+            }
+            .footer button {
+                height: auto;
+                width: auto;
+            }
+            .box {
+                padding: 5px;
+            }
+            .body h2 {
+                font-size: 19px;
+            }
+            .body h4 {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 1440px) and (min-width: 1025px) {
             .iconbar {
                 font-size: 20px;
-            }
-            .footer .students {
-                margin-left: 30px;
             }
         }
     </style>
